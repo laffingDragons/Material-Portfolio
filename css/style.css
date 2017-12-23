@@ -188,6 +188,14 @@ h4.set {
     padding: 3em 0;
 }
 
+.coffee {
+    background: url(../images/coffee.jpg) 0px 0px;
+    width: 100%;
+    min-height: 340px;
+    display: block;
+    background-size: cover;
+}
+
 .bottom-grid {
     background: url(../images/bb.jpg) 0px 0px;
     width: 100%;
