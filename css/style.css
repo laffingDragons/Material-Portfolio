@@ -1218,3 +1218,17 @@ p.footer-class {
         bottom: -7%;
     }
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 25px;
+    border-radius: 15px 15px 0 0;
+}
+
+.card:hover {
+    box-shadow: 0 10px 25px 0 rgba(0,0,0,0.4);
+}
+.container1 {
+    padding: 2px 16px;
+}
