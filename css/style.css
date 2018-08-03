@@ -19,6 +19,12 @@ span.logo-h {
     display: block;
     margin: 0 auto;
 }
+.get{
+    margin: 1em 0 0em;
+    font-size: 2.5em;
+    color: #41B883 !important;
+    font-weight: 400;
+}
 
 .logo h1 {
     margin: 0;
@@ -240,6 +246,7 @@ h4.set {
 
 
 /*----*/
+
 
 .portfolio-top {
     text-align: center;
