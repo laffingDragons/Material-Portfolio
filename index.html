@@ -9,25 +9,10 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="css/etalage.css" type="text/css" media="all" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <!--//theme-style-->
-    <script type="application/x-javascript">
-        addEventListener("load", function() {
-            setTimeout(hideURLbar, 0);
-        }, false);
-
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
     <!--fonts-->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
-    <!--//fonts-->
-    <script src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-    <script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <!--//theme-style-->
+
 </head>
 
 <body>
@@ -58,13 +43,13 @@
                 </ul>
                 <!-- script-nav -->
                 <script>
-                    $("span.menu").click(function() {
-                        $(".top-nav ul").slideToggle(500, function() {});
+                    $("span.menu").click(function () {
+                        $(".top-nav ul").slideToggle(500, function () { });
                     });
                 </script>
                 <script type="text/javascript">
-                    jQuery(document).ready(function($) {
-                        $(".scroll").click(function(event) {
+                    jQuery(document).ready(function ($) {
+                        $(".scroll").click(function (event) {
                             event.preventDefault();
                             $('html,body').animate({
                                 scrollTop: $(this.hash).offset().top
@@ -80,7 +65,7 @@
     <!--content-->
     <div class="content">
         <div class="container">
-            <div class="about-us" id="about">
+            <div data-scroll class="about-us" id="about">
                 <div class="about">
                     <h3>Technologies <span>I had worked on</span></h3>
                     <img src="images/me.png" alt="" />
@@ -94,27 +79,27 @@
                         <!-- <img src="images/CSS3.png" alt="" />
                         <h4 class="design">CSS3</h4> -->
                         <img src="images/bootstrap.svg" alt="Bootstrap" style="height: auto; width: 160px" />
-                        <h4  class="design">Bootstrap</h4>
-                        
+                        <h4 class="design">Bootstrap</h4>
+
                     </div>
                     <div class="col-md-4 grid-about">
                         <img src="images/Javascript.png" alt="" />
-                        <h4  class="get">JavaScript</h4>
+                        <h4 class="get">JavaScript</h4>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
                 <div class="about-grid">
                     <div class="col-md-4 grid-about">
                         <img src="images/angular.png" alt="" />
-                        <h4 class="set">AngularJS,2,4,5,6</h4>
+                        <h4 class="set">Angular</h4>
                     </div>
                     <div class="col-md-4 grid-about">
                         <img src="images/react.png" alt="" style="height: auto; width: 160px" />
-                        <h4  class="design">ReactJs, Redux</h4>
+                        <h4 class="design">ReactJs, Redux</h4>
                     </div>
                     <div class="col-md-4 grid-about">
                         <img src="images/vue.png" alt="" style="height: auto; width: 160px" />
-                        <h4 class="get">VueJs, Vuex</h4>
+                        <h4 class="get">Vue, Vuex</h4>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -142,11 +127,11 @@
         </div>
         <!--------work starts----->
         <div class="container">
-            <div class="portfolio" id="portfolio">
+            <div class="portfolio" id="portfolio" data-scroll>
                 <div class="portfolio-top">
                     <h3>MY <span>WORK</span></h3>
-                    <img src="images/me.png" alt="" /><br/><br/>
-                </div><br/><br/>
+                    <img src="images/me.png" alt="" /><br /><br />
+                </div><br /><br />
                 <!---------card start here------>
                 <div class='col-sm-12 col-md-6 col-lg-4'>
                     <a href="https://laffingdragons.github.io/Game-of-Thrones-Angular4-/home" target="_blank">
@@ -280,27 +265,27 @@
     <div class="bottom-grid">
         <div class="container">
         </div>
-    </div><br/><br/><br/><br/>
+    </div><br /><br /><br /><br />
 
     <!---- education------>
     <div class='coffee' id='study'>
         <div class='container' style='color: white'>
-            <h1 class='text-center'><strong>EDUCATION</strong><br/>
+            <h1 class='text-center' ><strong>EDUCATION</strong><br />
                 <img src="images/me.png" alt="" /></h1>
 
             <h3 class="colorCream">VIDYALANKAR INSTITUTE<span class="colorWhite"> OF TECHNOLOGY</span></h3>
-            <h4>2014-2017</h4><br/><br/>
+            <h4>2014-2017</h4><br /><br />
             <h3 class="colorCream">VIVEKANANDA EDUCATION<span class="colorWhite"> SOCIETY POLYTECHNIQUE</span></h3>
-            <h4>2011-2014</h4><br/><br/>
+            <h4>2011-2014</h4><br /><br />
             <h3 class="colorCream">LTH <span class="colorWhite"> SCHOOL</span></h3>
-            <h4>2011</h4><br/>
+            <h4>2011</h4><br />
         </div>
     </div>
     <!---->
     <div class="contact" id="contact">
         <div class="contact-bottom">
             <div class="container">
-                <h3>CONTACT WITH ME<br/>
+                <h3>CONTACT WITH ME<br />
                     <img src="images/me.png" alt="" /></h3>
                 <ul class='social'>
                     <li>
@@ -310,7 +295,7 @@
                     <li>
                         <a href="https://www.linkedin.com/in/akshay-patil-643253106/" target="_blank"><img src='images/linkedIn.svg'></a>
                     </li>
-                </ul><br/>
+                </ul><br />
             </div>
         </div>
     </div>
@@ -322,7 +307,7 @@
             <img src="images/profile.png" alt="" style="height: 70px; width: 70px" />
             <h3 style="display: inline; color: mediumpurple"> akshaypatil.vit@gmail.com</h3>
             <script type="text/javascript">
-                $(document).ready(function() {
+                $(document).ready(function () {
 
                     $().UItoTop({
                         easingType: 'easeOutQuart'
@@ -333,6 +318,31 @@
             <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
         </div>
     </div>
+
+
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--//fonts-->
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut({
+            // threshold: .2,
+            once:true
+        });
+    </script>
 </body>
 
 </html>

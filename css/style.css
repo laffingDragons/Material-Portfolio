@@ -1247,6 +1247,21 @@ p.footer-class {
     color: white;
 }
 
-.colorCream {
+.colorCream  {
     color: #FFD83A;
 }
+
+
+
+[data-scroll] {
+    transition: all 2s;
+  }
+  [data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  [data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+
