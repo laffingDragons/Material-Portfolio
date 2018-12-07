@@ -195,15 +195,31 @@
                 </div>
 
                 <div class='col-sm-12 col-md-6 col-lg-4'>
-                    <a href="https://laffingdragons.github.io/Facebook-API/" target="_blank">
-                        <div class="card">
-                            <img class='img-responsive' src="images/2.png" alt="Avatar" style="width:100%; border-radius: 15px 15px 0 0; ">
-                            <div class="container1">
-                                <h4><b>Facebook Graph API (jQuery)</b></h4>
+                    <div class="card">
+                        <a id="show">
+                            <img class='img-responsive' src="images/node.jpg" alt="Avatar" style="width:100%; border-radius: 15px 15px 0 0; ">
+                            <div class="container1" data-role="collapsible">
+                                <h4><b>Node.js</b></h4>
+                                <div id="content">
+                                    <ul>
+                                        <li>
+                                            <a href="https://github.com/laffingDragons/ChatApp-Backend" target="_blank">Chat App</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/laffingDragons/Todo-Backend" target="_blank">Real Time
+                                                Todo List</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/laffingDragons/Issue-Tracking-Tool"  target="_blank">Issue Tracking
+                                                Tool</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
+
 
                 <!-- <div class='col-sm-12 col-md-6 col-lg-4'>
                     <a href="https://laffingdragons.github.io/Sorting-Table-using-Angular/" target="_blank">
@@ -321,13 +337,21 @@
                         easingType: 'easeOutQuart'
                     });
 
+                    $("#content").hide();
+
+                    $("#show").click(function () {
+                        $("#content").toggle();
+                    });
+
+
                 });
             </script>
             <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
         </div>
     </div>
 
-
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script type="application/x-javascript">
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
