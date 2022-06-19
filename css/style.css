@@ -641,7 +641,7 @@ b.line-in {
 /*----*/
 
 .contact {
-    padding: 6em 0 0;
+    /* padding: 6em 0 0; */
 }
 
 .contact-form {
@@ -961,7 +961,7 @@ p.footer-class {
         width: 38%;
     }
     .contact {
-        padding: 4em 0 0;
+        /* padding: 4em 0 0; */
     }
     .about-grid {
         padding: 1em 0;
@@ -1031,7 +1031,7 @@ p.footer-class {
         padding: 2em 3em;
     }
     .contact {
-        padding: 3em 0 0;
+        /* padding: 3em 0 0; */
     }
 }
 
@@ -1206,7 +1206,7 @@ p.footer-class {
         margin: 0 0em 1em 1em;
     }
     .contact {
-        padding: 2em 0 0;
+        /* padding: 2em 0 0; */
     }
     .contact-bottom {
         min-height: 262px;
