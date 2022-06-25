@@ -6,7 +6,7 @@ body {
 .header {
     background: url(../images/banner.jpg) bottom;
     width: 100%;
-    min-height: 740px;
+    min-height: 100vh;
     display: block;
     background-size: cover;
     position: relative;
@@ -979,7 +979,7 @@ p.footer-class {
         width: 619px;
     }
     .header {
-        min-height: 500px;
+        min-height: 100vh;
     }
     .logo {
         padding: 3em 0;
