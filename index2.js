@@ -17,22 +17,38 @@
 
 
 //Closures example 
-function z() {
-    let b = 100;
+// function z() {
+//     let b = 100;
 
-    function y() {
-        let a = 23;
+//     function y() {
+//         let a = 23;
 
-        function x() {
-            console.log(a, b);
-        };
+//         function x() {
+//             console.log(a, b);
+//         };
 
-        x();
-    }
-    y();
-}
+//         x();
+//     }
+//     y();
+// }
 
-z();
+// z();
 
 
 //Closures example  ends here
+
+
+// Settimeout let block scope explained 
+function settimeooutBlockScope() {
+    
+    // for (var i = 0; i <= 5; i++) {
+        // let has blocked scope 
+        for (let i = 0; i <= 5; i++) {
+       setTimeout(() => {
+        console.log(i);
+       }, i * 1000);
+    }
+};
+
+settimeooutBlockScope();
+// Settimeout let block scope explained  Ends here
