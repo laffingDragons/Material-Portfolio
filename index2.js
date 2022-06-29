@@ -1,14 +1,38 @@
 
 
+// Hoistiong example
+
+// getName()
+
+// var n = 5;
+
+// function getName() {
+//     console.log("In Getname function");
+// }
+
+// console.log(n);
+// console.log(getName);
+
+// Hoisting example ends here
 
 
-getName()
+//Closures example 
+function z() {
+    let b = 100;
 
-var n = 5;
+    function y() {
+        let a = 23;
 
-function getName() {
-    console.log("In Getname function");
+        function x() {
+            console.log(a, b);
+        };
+
+        x();
+    }
+    y();
 }
 
-console.log(n);
-console.log(getName);
+z();
+
+
+//Closures example  ends here
