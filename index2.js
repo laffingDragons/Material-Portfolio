@@ -40,7 +40,7 @@
 
 // Settimeout let block scope explained 
 // function settimeooutBlockScope() {
-    
+
 //     // for (var i = 0; i <= 5; i++) {
 //         // let has blocked scope 
 //         for (let i = 0; i <= 5; i++) {
@@ -78,27 +78,39 @@
 
 // Function Constructor in javascript  starts here
 
-function Counter() {
+// function Counter() {
 
-    var count = 10;
+//     var count = 10;
 
-    this.increamentCounter = function() {
-        count++;
-        console.log(count);
-    }
+//     this.increamentCounter = function() {
+//         count++;
+//         console.log(count);
+//     }
 
-    this.decreamentCounter = function () {
-        count--;
-        console.log(count);
-    }
-}
+//     this.decreamentCounter = function () {
+//         count--;
+//         console.log(count);
+//     }
+// }
 
-let counter1 = new Counter();
+// let counter1 = new Counter();
 
-counter1.increamentCounter();
-counter1.increamentCounter();
-counter1.increamentCounter();
+// counter1.increamentCounter();
+// counter1.increamentCounter();
+// counter1.increamentCounter();
 
-counter1.decreamentCounter();
+// counter1.decreamentCounter();
 
 // Function Constructor in javascript  ends here
+
+// Adding event listener 
+
+function clickButton() {
+    var count = 0;
+        document.getElementById("clickMe").addEventListener("click", function (params) {
+        console.log("Marque Clicked", ++count);
+    })
+}
+
+clickButton();
+// Adding event listener ends here
