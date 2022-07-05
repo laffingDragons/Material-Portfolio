@@ -105,12 +105,34 @@
 
 // Adding event listener 
 
-function clickButton() {
-    var count = 0;
-        document.getElementById("clickMe").addEventListener("click", function (params) {
-        console.log("Marque Clicked", ++count);
-    })
+// function clickButton() {
+//     var count = 0;
+//         document.getElementById("clickMe").addEventListener("click", function (params) {
+//         console.log("Marque Clicked", ++count);
+//     })
+// }
+
+// clickButton();
+// Adding event listener ends here
+
+
+// Trust issues with Settimeout
+
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Callback");
+}, 1*1000);
+
+console.log("end");
+
+let startDate = new Date().getTime();
+let endDate = startDate;
+
+while (endDate < startDate + 10000) {
+    endDate = new Date().getTime();
 }
 
-clickButton();
-// Adding event listener ends here
+console.log(">>>>>",startDate);
+
+// Trust issues with Settimeout ends here 
