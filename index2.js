@@ -118,21 +118,44 @@
 
 // Trust issues with Settimeout
 
-console.log("Start");
+// console.log("Start");
 
-setTimeout(() => {
-    console.log("Callback");
-}, 1*1000);
+// setTimeout(() => {
+//     console.log("Callback");
+// }, 1*1000);
 
-console.log("end");
+// console.log("end");
 
-let startDate = new Date().getTime();
-let endDate = startDate;
+// let startDate = new Date().getTime();
+// let endDate = startDate;
 
-while (endDate < startDate + 10000) {
-    endDate = new Date().getTime();
-}
+// while (endDate < startDate + 10000) {
+//     endDate = new Date().getTime();
+// }
 
-console.log(">>>>>",startDate);
+// console.log(">>>>>",startDate);
 
 // Trust issues with Settimeout ends here 
+
+
+
+// Array.prototype function, Higher order functions
+let radius  = [2, 3, 4];
+
+function area(r) {
+    return Math.PI * r * r;
+}
+
+function circumference(r) {
+    return 2 * Math.PI * r ;
+}
+
+function diameter(r) {
+    return  2 * r;
+}
+
+console.log(radius.map(area));
+console.log(radius.map(circumference));
+console.log(radius.map(diameter));
+
+// Array.prototype function, Higher order functions ends here
