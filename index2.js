@@ -140,22 +140,69 @@
 
 
 // Array.prototype function, Higher order functions
-let radius  = [2, 3, 4];
+// let radius  = [2, 3, 4];
 
-function area(r) {
-    return Math.PI * r * r;
-}
+// function area(r) {
+//     return Math.PI * r * r;
+// }
 
-function circumference(r) {
-    return 2 * Math.PI * r ;
-}
+// function circumference(r) {
+//     return 2 * Math.PI * r ;
+// }
 
-function diameter(r) {
-    return  2 * r;
-}
+// function diameter(r) {
+//     return  2 * r;
+// }
 
-console.log(radius.map(area));
-console.log(radius.map(circumference));
-console.log(radius.map(diameter));
+// console.log(radius.map(area));
+// console.log(radius.map(circumference));
+// console.log(radius.map(diameter));
 
 // Array.prototype function, Higher order functions ends here
+
+
+// Examples of map, filter and reduce 
+
+let nameList = [
+    {firstName : "Hritik", lastName: "Roshan", age:30},
+    {firstName : "Deepika", lastName: "Padukon", age:26},
+    {firstName : "Amir", lastName: "Khan", age:50},
+    {firstName : "Salman", lastName: "Khan", age:55},
+    {firstName : "Katrina", lastName: "Kaif", age:26},
+];
+
+
+//Map is use to transform an array
+console.log(nameList.map(x=> `${x.firstName} ${x.lastName}`));
+
+//Filter is use to filter values form array
+console.log(nameList.filter(x=> x.age === 26));
+
+//Chaining 
+console.log(nameList.filter(x=> x.age === 26).map(x=> x.firstName));
+
+// reduce
+
+function noOfAge(acc, curr) {
+    if(acc[curr.age]){
+        acc[curr.age]++
+    }else{
+        acc[curr.age] = 1
+    }
+    return acc
+}
+
+
+function ageLessThan30(acc, curr) {
+    if(curr.age < 30){
+        acc.push(curr.firstName)
+    }
+    return acc
+}
+
+let ageNo = nameList.reduce((acc, curr)=>ageLessThan30(acc, curr),[])
+
+console.log("Reduce Output", ageNo);
+
+
+// Examples of map, filter and reduce Ends here
